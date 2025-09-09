@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-08 20:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: template/layout/footer.html:16
+msgid ""
+"\n"
+"                                            Lorem ipsum dolor sit amet, "
+"consectetur adipiscing elit sed do eiusmod tempor incididunt\n"
+"                                        ut labore et dolore magna aliqua. Ut "
+"enim ad minim\n"
+"                                        "
+msgstr ""
+"\n"
+"Bu joyga sayt mazmuni joylashtiriladi. Ma'lumotlar bazasi yangilanmoqda."
+"Iltimos, biroz kuting. Agar muammo davom etsa,\n"
+"                                    sayt administratori bilan bog‘laning."
+"                                        "
+
+#: template/layout/footer.html:27
+#, fuzzy
+#| msgid "About"
+msgid "About Us"
+msgstr "Haqimizda"
+
+#: template/layout/footer.html:30
+msgid "Reasons to shop"
+msgstr "Bizning kuchli tomonlarimiz"
+
+#: template/layout/footer.html:33
+msgid "What our customers say"
+msgstr "Bizning mijozlarimiz nima deyishadi"
+
+#: template/layout/footer.html:36
+msgid "Meet the teaml"
+msgstr "Bizning mutaxassislar"
+
+#: template/layout/footer.html:39
+msgid "Contact our buyers"
+msgstr "Xarid uchun maslahat"
+
+#: template/layout/footer.html:55
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact Us"
+msgstr "Aloqa"
+
+#: template/layout/footer.html:61
+msgid "Address :"
+msgstr "Manzil :"
+
+#: template/layout/footer.html:71
+msgid "Email :"
+msgstr "Email :"
+
+#: template/layout/footer.html:80
+msgid "Hotline :"
+msgstr "Aloqa :"
+
+#: template/layout/footer.html:89
+msgid "Opening Hours :"
+msgstr "Ish vaqti :"
+
+#: template/layout/footer.html:102
+msgid "Newsletter"
+msgstr "Yangiliklar xati"
+
+#: template/layout/footer.html:104
+msgid ""
+"\n"
+"                                            Sign up to our newsletter to get "
+"the latest articles, lookbooks voucher codes direct\n"
+"                                        to your inbox\n"
+"                                        "
+msgstr ""
+"\n"
+"                                            Bu joyga sayt mazmuni joylashtiriladi. "
+"Ma'lumotlar bazasi yangilanmoqda. Iltimos, biroz kuting.\n"
+"Agar muammo davom etsa, sayt administratori bilan bog‘laning.\n"
+"                                        "
+
+#: template/layout/footer.html:115
+msgid "subscribe"
+msgstr "Obuna"
+
+#: template/layout/footer.html:128
+msgid "Follow us on"
+msgstr "Ijtimoiy tarmoqlar"
+
+#: template/layout/footer.html:163
+msgid "Payment accept"
+msgstr "To'lov tizimlari"
+
+#: template/layout/header-base.html:31 template/layout/header-home.html:32
+#: template/layout/header-home.html:304
+msgid "Search"
+msgstr "Qidiruv"
+
+#: template/layout/header-base.html:113 template/layout/header-home.html:103
+msgid "Home"
+msgstr "Asosiy"
+
+#: template/layout/header-base.html:116 template/layout/header-home.html:106
+msgid "Product"
+msgstr "Maxsulot"
+
+#: template/layout/header-base.html:119
+msgid "Blogs"
+msgstr "Bloglar"
+
+#: template/layout/header-base.html:122 template/layout/header-home.html:112
+msgid "About"
+msgstr "Haqimizda"
+
+#: template/layout/header-base.html:125 template/layout/header-home.html:115
+msgid "Contact"
+msgstr "Aloqa"
+
+#: template/layout/header-base.html:146
+msgid "Account"
+msgstr "Hisob"
+
+#: template/layout/header-base.html:159
+msgid "My Account"
+msgstr "Mening hisobim"
+
+#: template/layout/header-base.html:165
+msgid "Sign in"
+msgstr "Kirish"
+
+#: template/layout/header-base.html:171
+msgid "Register Account"
+msgstr "Ro'yhatdan o'tish"
+
+#: template/layout/header-base.html:177 template/layout/header-base.html:254
+msgid "Checkout"
+msgstr "Tekshirish"
+
+#: template/layout/header-base.html:183
+msgid "My Wishlists"
+msgstr "Yoqtirganlar"
+
+#: template/layout/header-base.html:246 template/layout/header-home.html:70
+msgid "Total:"
+msgstr "Narx :"
+
+#: template/layout/header-base.html:253
+msgid "View Cart"
+msgstr "Savatni ko‘rib chiqish"
+
+#: template/layout/header-home.html:109
+#, fuzzy
+#| msgid "Blogs"
+msgid "Blog"
+msgstr "Bloglar"
+
+#: template/layout/header-home.html:277
+msgid "FREE DELIVERY"
+msgstr "Bepul yetkazish"
+
+#: template/layout/header-home.html:290
+msgid "MONEY BACK"
+msgstr "Kafolatli to‘lov qaytarish"
+
+#: template/layout/header-home.html:291
+msgid "GUARANTEED"
+msgstr "Ishonch kafolati"

@@ -1,4 +1,6 @@
 {% load static %}
+{% load i18n %}
+{% load my_tags %}
     <header>
         <!-- header left mobie -->
         <div class="header-mobile d-md-none">
@@ -27,7 +29,7 @@
                 <div id="mobile_search_content">
                     <form method="get" action="#">
 
-                        <input type="text" name="s" value="" placeholder="Search">
+                        <input type="text" name="s" value="" placeholder="{% trans 'Search' %}">
                         <button type="submit">
                             <i class="fa fa-search"></i>
                         </button>
@@ -65,7 +67,7 @@
                                             </td>
                                         </tr>
                                         <tr class="total">
-                                            <td colspan="2">Total:</td>
+                                            <td colspan="2">{% trans 'Total:' %}</td>
                                             <td>£92.96</td>
                                         </tr>
 
@@ -98,19 +100,19 @@
                                 {% url 'about:abouts' as about_url %}
                                 {% url 'contact:contacts' as contact_url %}
                                 <li class="{% if request.path == home_url%}nav-link{% endif %}">
-                                    <a href="{% url 'about:home' %}" class="parent">Home</a>
+                                    <a href="{% url 'about:home' %}" class="parent">{% trans 'Home' %}</a>
                                 </li>
                                 <li class="{% if request.path == product_url%}nav-link{% endif %}">
-                                    <a href="{% url 'product:products' %}" class="parent">Product</a>
+                                    <a href="{% url 'product:products' %}" class="parent">{% trans 'Product' %}</a>
                                 </li>
                                 <li class="{% if request.path == blog_url%}nav-link{% endif %}">
-                                    <a href="{% url 'about:blog-list' %}" class="parent">Blogs</a>
+                                    <a href="{% url 'about:blog-list' %}" class="parent">{% trans 'Blog' %}</a>
                                 </li>
                                 <li class="{% if request.path == about_url%}nav-link{% endif %}">
-                                    <a href="{% url 'about:abouts' %}" class="parent">About</a>
+                                    <a href="{% url 'about:abouts' %}" class="parent">{% trans 'About' %}</a>
                                 </li>
                                 <li class="{% if request.path == contact_url%}nav-link{% endif %}">
-                                    <a href="{% url 'contact:contacts' %}" class="parent">Contact</a>
+                                    <a href="{% url 'contact:contacts' %}" class="parent">{% trans 'Contact' %}</a>
                                 </li>
                             </ul>
                         </div>
@@ -171,27 +173,18 @@
                                         </ul>
                                     </div>
                                     <div id="desktop_language_selector" class="language-selector groups-selector hidden-sm-down">
+                                        {% get_current_language as current_lang %}
+                                        {% get_available_languages as all_langs %}
                                         <ul class="list-inline">
-                                            <li class="list-inline-item current">
-                                                <a href="#">
-                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas.jpg' %}" alt="English" width="16" height="11">
+                                            {% for lang in all_langs %}
+                                                {% if current_lang != lang.0 %}
+                                                <li class="list-inline-item current">
+                                                <a href="{% get_full_url request lang.0 %}">
+                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas.jpg' %}" alt="{{ current_lang }}" width="16" height="11">
                                                 </a>
                                             </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas2.jpg' %}" alt="Italiano" width="16" height="11">
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas3.jpg' %}" alt="Français" width="16" height="11">
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="#">
-                                                    <img class="img-fluid" src="{% static 'img/home/home1-flas4.jpg' %}" alt="Español" width="16" height="11">
-                                                </a>
-                                            </li>
+                                                {% endif %}
+                                            {% endfor %}
                                         </ul>
                                     </div>
                                 </div>
@@ -221,9 +214,11 @@
                         <!-- language -->
                         <div class="desktop-language-selector language-selector groups-selector hidden-sm-down d-flex align-items-center">
                             <div class="dropdown-language myaccount-title">
+                                {% get_current_language as current_lang %}
+                                {% get_available_languages as all_langs %}
                                 <a href="#language" data-toggle="collapse" class="acount">
                                     <span class="expand-more">
-                                        <img class="img-fluid" src="{% static 'img/home/lg1.jpg' %}" alt="English" width="16" height="11">
+                                        <img class="img-fluid" src="{% static 'img/home/lg1.jpg' %}" alt="{{ current_lang }}" width="16" height="11">
                                     </span>
                                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </a>
@@ -231,28 +226,14 @@
                             <div id="language" class="collapse">
                                 <div class="language-list-content">
                                     <div class="language-item current flex-first language-list-content">
-                                        <a href="#">
-                                            <img class="img-fluid" src="{% static 'img/home/lg1.jpg' %}" alt="English" width="16" height="11">
-                                            <span>English</span>
+                                        {% for lang in all_langs %}
+                                        <a href="{% get_full_url request lang.0 %}">
+                                            {% if current_lang != lang.0 %}
+                                            <img class="img-fluid" src="{% static 'img/home/lg1.jpg' %}" alt="{{ current_lang }}" width="16" height="11">
+                                            <span>{{ lang.0|upper }}</span>
+                                        {% endif %}
                                         </a>
-                                    </div>
-                                    <div class="language-item language-list-content">
-                                        <a href="#">
-                                            <img class="img-fluid" src="{% static 'img/home/lg2.jpg' %}" alt="Italiano" width="16" height="11">
-                                            <span>Italiano</span>
-                                        </a>
-                                    </div>
-                                    <div class="language-item language-list-content">
-                                        <a href="#">
-                                            <img class="img-fluid" src="{% static 'img/home/lg3.jpg' %}" alt="Français" width="16" height="11">
-                                            <span>Français</span>
-                                        </a>
-                                    </div>
-                                    <div class="language-item">
-                                        <a href="#">
-                                            <img class="img-fluid" src="{% static 'img/home/lg4.jpg' %}" alt="Español" width="16" height="11">
-                                            <span>Español</span>
-                                        </a>
+                                        {% endfor %}
                                     </div>
                                 </div>
                             </div>
@@ -293,7 +274,7 @@
                                     <div class="policy-item">
                                         <div class="policy-content iconpolicy1">
                                             <img src="{% static 'img/home/home1-policy.png' %}" alt="img">
-                                            <div>FREE DELIVERY</div>
+                                            <div>{% trans 'FREE DELIVERY' %}</div>
                                             <div>From $ 250</div>
                                         </div>
                                     </div>
@@ -306,8 +287,8 @@
                                     <div class="policy-item">
                                         <div class="policy-content iconpolicy3">
                                             <img src="{% static 'img/home/home1-policy3.png' %}" alt="img">
-                                            <div>MONEY BACK</div>
-                                            <div>GUARANTEED</div>
+                                            <div>{% trans 'MONEY BACK' %}</div>
+                                            <div>{% trans 'GUARANTEED' %}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -320,7 +301,7 @@
                         <form method="get" action="#">
 
                             <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-                            <input type="text" name="s" value="" placeholder="Search" class="ui-autocomplete-input" autocomplete="off">
+                            <input type="text" name="s" value="" placeholder="{% trans 'Search' %}" class="ui-autocomplete-input" autocomplete="off">
                             <button type="button">
                                 <i class="fa fa-search"></i>
                             </button>
