@@ -1,6 +1,7 @@
 {% extends 'layout/base.html' %}
 {% load static %}
 {% block title %}Contact{% endblock %}
+{% load i18n %}
 {% block body_id %}id="contact" class="blog"{% endblock %}
 {% block content %}    <!-- main content -->
     <div class="main-content">
@@ -13,12 +14,12 @@
                         <div class="breadcrumb">
                             <ol>
                                 <li>
-                                    <a href="#">
+                                    <a href="{% url 'about:home' %}">
                                         <span>Home</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="{% url 'contact:contacts' %}">
                                         <span>Contact</span>
                                     </a>
                                 </li>
@@ -29,7 +30,7 @@
                 <div id="main">
                     <div class="page-home">
                         <div class="container">
-                            <h1 class="text-center title-page">Contact Us</h1>
+                            <h1 class="text-center title-page">{% trans 'Contact Us' %}</h1>
                             <div class="row-inhert">
                                 <div class="header-contact">
                                     <div class="row">
@@ -41,7 +42,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="item-right d-flex">
-                                                    <div class="title">Email:</div>
+                                                    <div class="title">{% trans 'Email:' %}</div>
                                                     <div class="contact-content">
                                                         <a href="mailto:support@domain.com">support@domain.com</a>
                                                         <br>
@@ -58,7 +59,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="item-right d-flex">
-                                                    <div class="title">Address:</div>
+                                                    <div class="title">{% trans 'Address:' %}</div>
                                                     <div class="contact-content">
                                                         23 Suspendis matti, Visaosang Building
                                                         <br>District, NY Accums, North American
@@ -74,7 +75,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="item-right d-flex">
-                                                    <div class="title">Hotline:</div>
+                                                    <div class="title">{% trans 'Hotline:' %}</div>
                                                     <div class="contact-content">
                                                         0123-456-78910
                                                         <br>0987-654-32100

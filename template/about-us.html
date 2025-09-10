@@ -3,6 +3,7 @@
 {% block title %}About{% endblock %}
 {% block body_id %}id="about-us" class="blog"{% endblock %}
 {% block content %}
+{% load i18n %}
 <!-- main content -->
     <div class="main-content">
 			<div id="wrapper-site">
@@ -15,12 +16,12 @@
 								<ol>
 									<li>
 										<a href="#">
-											<span>Home</span>
+											<span>{% trans 'Home' %}</span>
 										</a>
 									</li>
 									<li>
 										<a href="#">
-											<span>About us</span>
+											<span>{% trans 'About us' %}</span>
 										</a>
 									</li>
 								</ol>
@@ -32,7 +33,7 @@
 							<div class="container">
 								<div class="about-us-content">
 									
-									<h1 class="title-page">About Us</h1>
+									<h1 class="title-page">{% trans 'About Us' %}</h1>
 									<div class="row">
 										<div class="col-lg-6 col-md-6 col-sm-6 right">
 											<a href="#">
@@ -41,14 +42,18 @@
 										</div>
 										<div class="col-lg-6 col-md-6 col-sm-6 left">
 											<div class="cms-block f-right">
-												<h3 class="page-subheading">WHO WE ARE</h3>
-												<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis biben
+												<h3 class="page-subheading">{% trans 'WHO WE ARE' %}</h3>
+												<p>
+                                                    {% blocktrans %}Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis biben
 													dum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
 													sed odio sit amet nibh vultate cursus a sit amet mauris. Duis sed odio sit
-												amet nibh vultate cursus a sit amet mauris.</p>
-												<p>Proin gravida nibh vel velit auctor aliquet. nec sagittis sem nibh id elit. Duis
+												amet nibh vultate cursus a sit amet mauris.{% endblocktrans %}
+                                                </p>
+												<p>
+                                                    {% blocktrans %}Proin gravida nibh vel velit auctor aliquet. nec sagittis sem nibh id elit. Duis
 													sed odio sit amet nibh vultate cursus a sit amet mauris. Duis sed odio sit
-												amet nibh vultate cursus a sit amet mauris.</p>
+												amet nibh vultate cursus a sit amet mauris.{% endblocktrans %}
+                                                </p>
 												<a>
 													<img class="img-fluid" src="{% static 'img/other/4.png' %}" alt="#" />
 													<span>Mr. kwang shang - CEO</span>
@@ -58,13 +63,16 @@
 										<div class="col-lg-6 col-md-6 col-sm-6 right">
 											<div class="cms-block f-left">
 												<h3 class="page-subheading">WHAT WE DO</h3>
-												<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis biben
-													dum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
+												<p>
+                                                    {% blocktrans %}Proin gravida nibh vel velit auctor aliquet. nec sagittis sem nibh id elit. Duis
 													sed odio sit amet nibh vultate cursus a sit amet mauris. Duis sed odio sit
-												amet nibh vultate cursus a sit amet mauris.</p>
-												<p>Proin gravida nibh vel velit auctor aliquet, nec sagittis sem nibh id elit. Duis
+												amet nibh vultate cursus a sit amet mauris.{% endblocktrans %}
+                                                </p>
+												<p>
+                                                    {% blocktrans %}Proin gravida nibh vel velit auctor aliquet. nec sagittis sem nibh id elit. Duis
 													sed odio sit amet nibh vultate cursus a sit amet mauris. Duis sed odio sit
-												amet nibh vultate cursus a sit amet mauris.</p>
+												amet nibh vultate cursus a sit amet mauris.{% endblocktrans %}
+                                                </p>
 											</div>
 										</div>
 										<div class="col-lg-6 col-md-6 col-sm-6 left">
@@ -84,40 +92,40 @@
 													<div class="item">
 														<div class="name">William James</div>
 														<div class="position">Designer - Stylish</div>
-														<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem
-															quis biben dum auctor, nisi elit consequat ipsum, nec sagittis sem
-															nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet
-															mauris. Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin,
-															lorem quis bibendum auctor, nisi elit conse quat ipsum
+														<p>
+                                                            {% blocktrans %}Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis biben
+													            dum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
+													        sed odio sit amet nibh vultate cursus a sit amet mauris. Duis sed odio sit
+												            amet nibh vultate cursus a sit amet mauris.{% endblocktrans %}
 														</p>
 													</div>
 													<div class="item">
 														<div class="name">Seller Smith</div>
 														<div class="position">Web developer</div>
-														<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem
-															quis biben dum auctor, nisi elit consequat ipsum, nec sagittis sem
-															nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet
-															mauris.
+														<p>
+                                                            {% blocktrans %}Proin gravida nibh vel velit auctor aliquet. nec sagittis sem nibh id elit. Duis
+													        sed odio sit amet nibh vultate cursus a sit amet mauris. Duis sed odio sit
+												            amet nibh vultate cursus a sit amet mauris.{% endblocktrans %}
 														</p>
 													</div>
 													<div class="item">
 														<div class="name">Peter Capidal</div>
 														<div class="position">Front-end Developer</div>
-														<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem
-															quis biben dum auctor, nisi elit consequat ipsum, nec sagittis sem
-															nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet
-															mauris. Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin,
-															lorem quis bibendum auctor, nisi elit conse quat ipsum
+														<p>
+                                                            {% blocktrans %}Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis biben
+													            dum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
+													        sed odio sit amet nibh vultate cursus a sit amet mauris. Duis sed odio sit
+												            amet nibh vultate cursus a sit amet mauris.{% endblocktrans %}
 														</p>
 													</div>
 													<div class="item">
 														<div class="name">David James</div>
 														<div class="position">Developer</div>
-														<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem
-															quis biben dum auctor, nisi elit consequat ipsum, nec sagittis sem
-															nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet
-															mauris.Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin,
-															lorem quis bibendum auctor, nisi elit conse quat ipsum
+														<p>
+                                                            {% blocktrans %}Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis biben
+													            dum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
+													        sed odio sit amet nibh vultate cursus a sit amet mauris. Duis sed odio sit
+												            amet nibh vultate cursus a sit amet mauris.{% endblocktrans %}
 														</p>
 													</div>
 												</div>

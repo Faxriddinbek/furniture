@@ -96,7 +96,7 @@
                             <ul class="menu-top navbar-nav">
                                 {% url 'about:home' as home_url %}
                                 {% url 'product:products' as product_url %}
-                                {% url 'about:blog-list' as blog_url %}
+                                {% url 'blogs:blog' as blog_url %}
                                 {% url 'about:abouts' as about_url %}
                                 {% url 'contact:contacts' as contact_url %}
                                 <li class="{% if request.path == home_url%}nav-link{% endif %}">
@@ -106,7 +106,7 @@
                                     <a href="{% url 'product:products' %}" class="parent">{% trans 'Product' %}</a>
                                 </li>
                                 <li class="{% if request.path == blog_url%}nav-link{% endif %}">
-                                    <a href="{% url 'about:blog-list' %}" class="parent">{% trans 'Blog' %}</a>
+                                    <a href="{% url 'blogs:blog' %}" class="parent">{% trans 'Blog' %}</a>
                                 </li>
                                 <li class="{% if request.path == about_url%}nav-link{% endif %}">
                                     <a href="{% url 'about:abouts' %}" class="parent">{% trans 'About' %}</a>

@@ -13,7 +13,7 @@ class ContactModel(BaseModel):
     full_name = models.CharField(max_length=128)
     email = models.EmailField()
     subject = models.CharField(
-        max_length=255, null=True, blank=True
+        max_length=255
     )
     message = models.TextField()
 

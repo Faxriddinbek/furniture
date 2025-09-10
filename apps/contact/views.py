@@ -9,9 +9,10 @@ def contact_page_views(request):
             form.save(commit=False)
             form.result = 1313
             form.save()
-            return redirect('contact:contact')
+            return redirect('contact:contacts')
         else:
             errors = []
+            print(errors)
             for key, value in form.errors.items():
                 for error in value:
                     errors.append(error)

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-08 20:50+0000\n"
+"POT-Creation-Date: 2025-09-10 12:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,121 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: template/about-us.html:19 template/blog-detail.html:21
+#: template/blog-list-sidebar-left.html:21 template/layout/header-base.html:113
+#: template/layout/header-home.html:103 template/product-cart.html:18
+#: template/product-checkout.html:17 template/product-grid-sidebar-left.html:20
+#: template/user-login.html:19 template/user-register.html:18
+#: template/user-reset-password.html:18 template/user-wishlist.html:18
+msgid "Home"
+msgstr ""
+
+#: template/about-us.html:24 template/user-register.html:23
+msgid "About us"
+msgstr ""
+
+#: template/about-us.html:36 template/layout/footer.html:27
+msgid "About Us"
+msgstr ""
+
+#: template/about-us.html:45
+msgid "WHO WE ARE"
+msgstr ""
+
+#: template/about-us.html:47
+msgid ""
+"Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis "
+"biben\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tdum auctor, nisi elit consequat ipsum, nec "
+"sagittis sem nibh id elit. Duis\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tsed odio sit amet nibh vultate cursus a sit amet "
+"mauris. Duis sed odio sit\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tamet nibh vultate cursus a sit amet mauris."
+msgstr ""
+
+#: template/about-us.html:53 template/about-us.html:67
+#: template/about-us.html:72
+msgid ""
+"Proin gravida nibh vel velit auctor aliquet. nec sagittis sem nibh id elit. "
+"Duis\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\tsed odio sit amet nibh vultate cursus a sit amet "
+"mauris. Duis sed odio sit\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tamet nibh vultate cursus a sit amet mauris."
+msgstr ""
+
+#: template/about-us.html:96 template/about-us.html:115
+#: template/about-us.html:125
+msgid ""
+"Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, lorem quis "
+"biben\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t            dum auctor, nisi elit consequat ipsum, "
+"nec sagittis sem nibh id elit. Duis\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t        sed odio sit amet nibh vultate cursus a "
+"sit amet mauris. Duis sed odio sit\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t            amet nibh vultate cursus a sit amet "
+"mauris."
+msgstr ""
+
+#: template/about-us.html:106
+msgid ""
+"Proin gravida nibh vel velit auctor aliquet. nec sagittis sem nibh id elit. "
+"Duis\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\t        sed odio sit amet nibh vultate cursus a "
+"sit amet mauris. Duis sed odio sit\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t            amet nibh vultate cursus a sit amet "
+"mauris."
+msgstr ""
+
+#: template/blog-detail.html:26 template/blog-list-sidebar-left.html:26
+#: template/product-grid-sidebar-left.html:25
+msgid "Living Room"
+msgstr ""
+
+#: template/blog-detail.html:31 template/blog-list-sidebar-left.html:31
+#: template/product-grid-sidebar-left.html:30
+msgid "Sofa"
+msgstr ""
+
+#: template/blog-detail.html:45 template/blog-list-sidebar-left.html:45
+msgid "Categories"
+msgstr ""
+
+#: template/blog-list-sidebar-left.html:77
+msgid "Blog Tags"
+msgstr ""
+
+#: template/blog-list-sidebar-left.html:101
+msgid "Recent Posts"
+msgstr ""
+
+#: template/blog-list-sidebar-left.html:122
+msgid "view more"
+msgstr ""
+
+#: template/blog-list-sidebar-left.html:131
+msgid "Previous"
+msgstr ""
+
+#: template/blog-list-sidebar-left.html:146
+msgid "Next"
+msgstr ""
+
+#: template/contact.html:33 template/layout/footer.html:55
+msgid "Contact Us"
+msgstr ""
+
+#: template/contact.html:45
+msgid "Email:"
+msgstr ""
+
+#: template/contact.html:62
+msgid "Address:"
+msgstr ""
+
+#: template/contact.html:78
+msgid "Hotline:"
+msgstr ""
+
 #: template/layout/footer.html:16
 msgid ""
 "\n"
@@ -26,10 +141,6 @@ msgid ""
 "                                        ut labore et dolore magna aliqua. Ut "
 "enim ad minim\n"
 "                                        "
-msgstr ""
-
-#: template/layout/footer.html:27
-msgid "About Us"
 msgstr ""
 
 #: template/layout/footer.html:30
@@ -46,10 +157,6 @@ msgstr ""
 
 #: template/layout/footer.html:39
 msgid "Contact our buyers"
-msgstr ""
-
-#: template/layout/footer.html:55
-msgid "Contact Us"
 msgstr ""
 
 #: template/layout/footer.html:61
@@ -98,10 +205,6 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: template/layout/header-base.html:113 template/layout/header-home.html:103
-msgid "Home"
-msgstr ""
-
 #: template/layout/header-base.html:116 template/layout/header-home.html:106
 msgid "Product"
 msgstr ""
@@ -135,6 +238,7 @@ msgid "Register Account"
 msgstr ""
 
 #: template/layout/header-base.html:177 template/layout/header-base.html:254
+#: template/product-checkout.html:22
 msgid "Checkout"
 msgstr ""
 
@@ -164,4 +268,40 @@ msgstr ""
 
 #: template/layout/header-home.html:291
 msgid "GUARANTEED"
+msgstr ""
+
+#: template/product-cart.html:23 template/product-cart.html:36
+msgid "Shopping Cart"
+msgstr ""
+
+#: template/product-checkout.html:40
+msgid "PERSONAL INFORMATION"
+msgstr ""
+
+#: template/product-checkout.html:47
+msgid "ORDER AS A GUEST"
+msgstr ""
+
+#: template/product-checkout.html:52
+msgid "SIGN IN"
+msgstr ""
+
+#: template/product-grid-sidebar-left.html:111
+msgid "By Color"
+msgstr ""
+
+#: template/user-login.html:24
+msgid "Login"
+msgstr ""
+
+#: template/user-reset-password.html:23
+msgid "User Reset Password"
+msgstr ""
+
+#: template/user-reset-password.html:48
+msgid "Send reset link"
+msgstr ""
+
+#: template/user-wishlist.html:23
+msgid "Wishlists"
 msgstr ""
